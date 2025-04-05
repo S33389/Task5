@@ -76,7 +76,7 @@ public class Wydarzenie {
     }
 
     public String toString() {
-        return this.nazwa + " " + this.data + " " + this.miejsce;
+        return this.nazwa + " " + this.cena + " " + this.data + " " + this.miejsce;
     }
 
     public void zarezerwujMiejsce(){

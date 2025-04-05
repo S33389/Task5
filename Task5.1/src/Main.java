@@ -4,8 +4,10 @@ public class Main{
         // Przykład interakcji między obiektami i kopiowania przez referencję
         SystemRezerwacji system = new SystemRezerwacji();
 // Dodaj wydarzenia i klientów
-        Wydarzenie koncert = new Wydarzenie("Koncert Symphony", 120.0);
-        Wydarzenie teatr = new Wydarzenie("Hamlet", 85.0);
+        Wydarzenie koncert = new Wydarzenie("Koncert Symphony", 120.0, "12.04");
+        Wydarzenie teatr = new Wydarzenie("Hamlet", 85.0, "15.05");
+        koncert.setDostępneMiejsca(100);
+        teatr.setDostępneMiejsca(100);
         system.dodajWydarzenie(koncert);
         system.dodajWydarzenie(teatr);
         Klient klient1 = new Klient("Jan", "Kowalski", "jan@example.com");

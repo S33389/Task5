@@ -21,6 +21,7 @@ public class SystemRezerwacji {
     public void dokonajRezerwacji(Klient klient, Wydarzenie wydarzenie){
         this.listaWydarzen.add(wydarzenie);
         this.listaKlientow.add(klient);
+        klient.dodajRezerwację(wydarzenie);
         wydarzenie.zarezerwujMiejsce();
 
     }
